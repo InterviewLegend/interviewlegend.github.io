@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Software Engineer Interview Prep — A Free Roadmap</title>
+<meta name="description" content="A free, no-fluff roadmap for preparing for software engineering interviews: coding patterns, system design, behavioral, and company-specific prep, in the order that actually works.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Schibsted+Grotesk:wght@500;700;800&family=Inter:wght@400;500;600&display=swap">
+<style>
+  :root{
+    --accent:#2563eb; --ink:#0f172a; --soft:#334155; --muted:#64748b;
+    --line:#e2e8f0; --card:#ffffff; --ground:#f8fafc;
+  }
+  *{box-sizing:border-box}
+  body{margin:0;background:var(--ground);color:var(--ink);font-family:'Inter',system-ui,sans-serif;line-height:1.6;-webkit-font-smoothing:antialiased}
+  .wrap{max-width:760px;margin:0 auto;padding:3rem 1.4rem 4rem}
+  h1,h2,h3{font-family:'Schibsted Grotesk','Inter',sans-serif;letter-spacing:-0.02em;line-height:1.15}
+  h1{font-size:clamp(2rem,1.4rem + 2.6vw,2.9rem);font-weight:800;margin:0 0 .6rem}
+  .lede{font-size:1.15rem;color:var(--soft);margin:0 0 2.5rem}
+  h2{font-size:1.5rem;font-weight:700;margin:2.6rem 0 .5rem}
+  .step{display:flex;gap:.9rem;align-items:baseline}
+  .num{flex:0 0 auto;font-family:'Schibsted Grotesk',sans-serif;font-weight:800;color:var(--accent);font-size:1.1rem;width:1.6rem}
+  p{margin:.6rem 0 1rem;color:var(--soft)}
+  a{color:var(--accent);text-decoration:none;font-weight:600}
+  a:hover{text-decoration:underline}
+  .res{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:.85rem 1.1rem;margin:0 0 1.4rem;font-size:.97rem}
+  .res b{color:var(--ink)}
+  .intro-card{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:1.4rem 1.6rem;margin:0 0 2.5rem}
+  hr{border:0;border-top:1px solid var(--line);margin:3rem 0}
+  footer{color:var(--muted);font-size:.95rem}
+  .brand{font-family:'Schibsted Grotesk',sans-serif;font-weight:800}
+  .eyebrow{font-size:.78rem;font-weight:600;letter-spacing:.12em;text-transform:uppercase;color:var(--accent);margin-bottom:.4rem}
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <div class="eyebrow">Free resource</div>
+  <h1>A roadmap for the software engineer interview</h1>
+  <p class="lede">Most prep advice is a pile of problem links with no order to it. This is the order that actually works — coding patterns first, then design, then the human rounds, then the company you're actually targeting. Every step points to a free, in-depth breakdown.</p>
+
+  <div class="intro-card">
+    <p style="margin:0"><b style="color:var(--ink)">Who this is for:</b> software engineers preparing for interviews at big tech and beyond, who want a path instead of a random problem list. The resources below are free and go deep on each stage. Maintained by the team behind <a href="https://interviewlegend.com">InterviewLegend</a>.</p>
+  </div>
+
+  <h2><span class="step"><span class="num">1</span><span>Build pattern recognition before volume</span></span></h2>
+  <p>The single biggest mistake is grinding hundreds of random problems. Interviews reward recognizing <em>which pattern</em> a problem wants — two pointers, sliding window, BFS/DFS, dynamic programming, intervals, heaps — not memorizing individual solutions. Learn the patterns on a curated set first, then scale volume only where you're weak.</p>
+  <div class="res"><b>Start here:</b> <a href="https://interviewlegend.com/blind-75">Is Blind 75 enough?</a> — why the 75-problem list is the efficient floor, and where it stops short. And the full <a href="https://interviewlegend.com/fundamentals">data structures &amp; algorithms foundations</a>.</p></div>
+
+  <h2><span class="step"><span class="num">2</span><span>Know the format that grades you before a human does</span></span></h2>
+  <p>Many companies gate the loop behind an automated assessment — a timed, auto-scored coding test — before anyone reads your resume. The scoring logic is nothing like a live interview, so it needs its own prep: speed, hidden test cases, and edge coverage over elegance.</p>
+  <div class="res"><b>Read:</b> <a href="https://interviewlegend.com/codesignal">How the CodeSignal assessment is scored</a> and <a href="https://interviewlegend.com/amazon-oa">what the Amazon Online Assessment actually tests</a>.</div>
+
+  <h2><span class="step"><span class="num">3</span><span>Learn system design as a language, not a checklist</span></span></h2>
+  <p>For mid-level and up, system design often decides the offer. It isn't about memorizing architectures — it's about reasoning through requirements, tradeoffs, and scale out loud. Build the core vocabulary (load balancing, caching, partitioning, consistency) and practice narrating decisions.</p>
+  <div class="res"><b>Read:</b> <a href="https://interviewlegend.com/system-design-questions">The system design questions companies actually ask</a>.</div>
+
+  <h2><span class="step"><span class="num">4</span><span>Treat the behavioral round as a scored round</span></span></h2>
+  <p>Strong coders get cut here constantly, because they wing it. The behavioral round is graded — on judgment, ownership, and how you handle conflict and failure. The fix is a small bank of specific stories, structured so the interviewer can actually follow them.</p>
+  <div class="res"><b>Read:</b> <a href="https://interviewlegend.com/behavioral-interview-questions">The behavioral questions software engineers get</a>, the <a href="https://interviewlegend.com/star-method">STAR method done right</a>, and how to open with <a href="https://interviewlegend.com/tell-me-about-yourself">"tell me about yourself"</a>. For Amazon specifically: <a href="https://interviewlegend.com/amazon-leadership-principles">the Leadership Principles</a> and <a href="https://interviewlegend.com/amazon-bar-raiser">the Bar Raiser</a>; for Google, <a href="https://interviewlegend.com/googleyness">Googleyness &amp; Leadership</a>.</div>
+
+  <h2><span class="step"><span class="num">5</span><span>Layer company-specific prep on top</span></span></h2>
+  <p>This is the step almost everyone skips, and it's where generic prep loses to targeted prep. Google weights different patterns than Amazon; Meta's design bar differs from Netflix's; a bank's loop looks nothing like a startup's. Once your fundamentals are solid, study the exact process, question style, and scoring rubric of the company you're actually interviewing with.</p>
+  <div class="res"><b>Go deep per company:</b> <a href="https://interviewlegend.com/guides">company-specific interview guides</a> that run the whole loop — recruiter screen through coding, system design, behavioral, to the offer — for 100+ companies.</div>
+
+  <hr>
+
+  <footer>
+    <p>Curated and maintained by <a href="https://interviewlegend.com" class="brand">InterviewLegend</a> — company-specific software engineering interview prep. This page is free; the deeper per-company guides live on the <a href="https://interviewlegend.com">main site</a>.</p>
+  </footer>
+
+</div>
+</body>
+</html>
